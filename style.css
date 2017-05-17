@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	color: black;
 	font-size: 16px;
-	font-family: 'Oswald', 'Garamond', 'Times', serif;
+	font-family: 'Garamond', 'Times', serif;
 	font-style: italic;
 	line-height: 1.5em;
 	text-align: center;
@@ -24,6 +24,12 @@ h2 {
 	font-weight: normal;
 	line-height: 1em;
 	margin: 0 auto 0.35em;
+
+}
+
+#title {
+	padding: 1em;
+	background-color: #4286f4;
 }
 
 #page {
@@ -34,15 +40,8 @@ h2 {
 
 #header {
 	width: 50em;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 }
-
-	#header img {
-		display: block;
-		width: 500px;
-		margin: 1.5em auto 2.4em;
-		border: 0;
-	}
 
 	#header #subtitle {
 		font-size: 1.5em;
