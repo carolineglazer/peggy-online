@@ -29,7 +29,8 @@ h2 {
 
 #title {
 	padding: 1em;
-	background-color: #4286f4;
+	margin-top: 3em;
+	background-color: #6da3f9;
 }
 
 #page {
@@ -87,7 +88,7 @@ h2 {
 		position: absolute;
 		width: 100px
 		vertical-align: middle;
-		top: 45em;
+		top: 35em;
 		left: 6.6em;
 	}
 
@@ -102,6 +103,6 @@ h2 {
 	width: 600px;
 	height: 3em;
 	border: 1px dashed black;
-	top: 45em;
+	top: 35em;
 	left: 6.6em;
 }
