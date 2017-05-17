@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	color: black;
+	font-size: 16px;
+	font-family: 'Garamond', 'Baskerville', 'Times', serif;
+	font-style: italic;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+h1 {
+	font-szie: 4.5em;
+	font-family: 'Garamond', 'Baskerville', 'Times', serif;
+	font-style: normal;
+	font-weight: normal;
+	margin: 0 auto 0.35em;
+}
+
+#page {
+	position: relative;
+	width: 1024px;
+	min-height: 600px;
+	margin: 0 auto;
+}
+
+#header {
+	margin-bottom: 3em;
+}
+
+	#header img {
+		display: block;
+		width: 1024px;
+		margin: 1.5em auto 2.4em;
+		border: 0;
+	}
+
+	#header #subtitle {
+		font-size: 1.5em;
+		line-height: 1.2em;
+		letter-spacing: 1px;
+	}
+
+#items {
+	margin: 0 auto;
+	padding: 0;
+	width: 400px;
+	list-style: none;
+}
+
