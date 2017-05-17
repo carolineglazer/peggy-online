@@ -50,28 +50,28 @@ h2 {
 		letter-spacing: 1px;
 	}
 
-#items {
+#nav {
 	margin: 0 auto;
 	padding: 0;
 	width: 400px;
 	list-style: none;
 }
 
-	#items li {
+	#nav li {
 		margin: 1em 0;
 	}
 
-	#items li a {
+	#nav li a {
 		text-decoration: none;
 		color: #222;
 	}
 
-	#items a .button {
+	#nav a .button {
 		font-style: italic;
 		font-size: 2.5em;
 		padding: 0 1.3em;
 	}
 
-	#items a:hover .button {
+	#nav a:hover .button {
 		background: url(finger-l.png) left no-repeat;
 	}
