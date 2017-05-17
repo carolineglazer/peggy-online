@@ -9,10 +9,19 @@ body {
 }
 
 h1 {
-	font-szie: 4.5em;
+	font-size: 4em;
 	font-family: 'Garamond', 'Baskerville', 'Times', serif;
 	font-style: normal;
 	font-weight: normal;
+	margin: 0 auto 0.35em;
+}
+
+h2 {
+	font-size: 2.5em;
+	font-family: 'Garamond', 'Baskerville', 'Times', serif;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1em;
 	margin: 0 auto 0.35em;
 }
 
@@ -24,12 +33,13 @@ h1 {
 }
 
 #header {
+	width: 1024px;
 	margin-bottom: 3em;
 }
 
 	#header img {
 		display: block;
-		width: 1024px;
+		width: 500px;
 		margin: 1.5em auto 2.4em;
 		border: 0;
 	}
@@ -47,3 +57,21 @@ h1 {
 	list-style: none;
 }
 
+	#items li {
+		margin: 1em 0;
+	}
+
+	#items li a {
+		text-decoration: none;
+		color: #222;
+	}
+
+	#items a .button {
+		font-style: italic;
+		font-size: 2.5em;
+		padding: 0 1.3em;
+	}
+
+	#items a:hover .button {
+		background: url(finger-l.png) left no-repeat;
+	}
