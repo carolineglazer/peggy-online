@@ -2,23 +2,24 @@ body {
 	margin: 0;
 	color: black;
 	font-size: 16px;
-	font-family: 'Garamond', 'Baskerville', 'Times', serif;
+	font-family: 'Garamond', 'Times', serif;
 	font-style: italic;
 	line-height: 1.5em;
 	text-align: center;
 }
 
 h1 {
-	font-size: 4em;
-	font-family: 'Garamond', 'Baskerville', 'Times', serif;
+	font-size: 3em;
+	font-family: 'Garamond', 'Times', serif;
 	font-style: normal;
 	font-weight: normal;
 	margin: 0 auto 0.35em;
+	line-height: 1em;
 }
 
 h2 {
-	font-size: 2.5em;
-	font-family: 'Garamond', 'Baskerville', 'Times', serif;
+	font-size: 1.9em;
+	font-family: 'Garamond', 'Times', serif;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 1em;
@@ -27,14 +28,13 @@ h2 {
 
 #page {
 	position: relative;
-	width: 1024px;
-	min-height: 600px;
+	width: 50em;
 	margin: 0 auto;
 }
 
 #header {
-	width: 1024px;
-	margin-bottom: 3em;
+	width: 50em;
+	margin-bottom: 1em;
 }
 
 	#header img {
@@ -46,15 +46,16 @@ h2 {
 
 	#header #subtitle {
 		font-size: 1.5em;
-		line-height: 1.2em;
+		line-height: 1em;
 		letter-spacing: 1px;
 	}
 
 #nav {
 	margin: 0 auto;
 	padding: 0;
-	width: 400px;
+	width: 40em;
 	list-style: none;
+	text-align: center;
 }
 
 	#nav li {
@@ -68,10 +69,40 @@ h2 {
 
 	#nav a .button {
 		font-style: italic;
-		font-size: 2.5em;
+		font-size: 1.9em;
 		padding: 0 1.3em;
 	}
 
 	#nav a:hover .button {
 		background: url(finger-l.png) left no-repeat;
 	}
+
+	
+	#nav a .text {
+		display: none;
+		width: 600px;
+	}
+	
+	#nav a:hover .text {
+		display: block;
+		position: absolute;
+		width: 100px
+		vertical-align: middle;
+		top: 45em;
+		left: 6.6em;
+	}
+
+	#nav a:active, #nav a:focus {
+		outline-style: none;
+		outline-width: 0;
+	}
+
+#box {
+	margin-bottom: 1em;
+	position: absolute;
+	width: 600px;
+	height: 3em;
+	border: 1px dashed black;
+	top: 45em;
+	left: 6.6em;
+}
