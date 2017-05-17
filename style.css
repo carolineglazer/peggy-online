@@ -53,7 +53,7 @@ h2 {
 #nav {
 	margin: 0 auto;
 	padding: 0;
-	width: 40em;
+	width: 45	em;
 	list-style: none;
 	text-align: center;
 }
@@ -74,10 +74,11 @@ h2 {
 	}
 
 	#nav a:hover .button {
-		background: url(finger-l.png) left no-repeat;
+		/*background: url(finger-l.png) left no-repeat;*/
+		background-color: black;
+		color: white;
 	}
 
-	
 	#nav a .text {
 		display: none;
 		width: 600px;
@@ -88,7 +89,7 @@ h2 {
 		position: absolute;
 		width: 100px
 		vertical-align: middle;
-		top: 35em;
+		top: 33em;
 		left: 6.6em;
 	}
 
@@ -103,6 +104,6 @@ h2 {
 	width: 600px;
 	height: 3em;
 	border: 1px dashed black;
-	top: 35em;
+	top: 33em;
 	left: 6.6em;
 }
