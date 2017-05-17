@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<!-- Mirrored from www.carolineglazer.com/peggy/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Mar 2017 17:58:25 GMT -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+
+    <script type='text/javascript' src="src/d3.min.js" charset="utf-8"></script>
+	<script type='text/javascript' src="src/jquery-1.12.4.min.js" charset="utf-8"></script>
+	<script type='text/javascript' src="src/bootstrap.min.js" charset="utf-8"></script>
+	<link rel='stylesheet' type='text/css' href='src/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='src/styles.css'>
+	<title>Melodic Contours</title>
+</head>
+<body>
+<!--  <b>Sort by: </b>   
+    <a href = "index.html">number, </a>
+    <a href = "by_name.html">name, </a>
+    <a href = "by_location.html">location, </a>
+    <a href = "by_year.html">year</a> -->
+    <div class = 'container'>
+      <svg class='chart'>
+      </svg>
+    </div>
+	  <table>
+	    <tr><td><b>Hear all the variants:</b></td></tr>
+	    <tr><td><select id="all">
+		  <option value="none" disabled selected>------</option>
+		  <option value="wav_same_key/001_Robertson.wav">001_Robertson</option>
+		  <option value="wav_same_key/002_Duncan.wav">002_Duncan</option>
+		  <option value="wav_same_key/003_Smith.wav">003_Smith</option>
+		  <option value="wav_same_key/005_Strachan.wav">005_Strachan</option>
+		  <option value="wav_same_key/007_Combs.wav">007_Combs</option>
+		  <option value="wav_same_key/008_Gentry.wav">008_Gentry</option>
+		  <option value="wav_same_key/009_Thomas.wav">009_Thomas</option>
+		  <option value="wav_same_key/010_Easton.wav">010_Easton</option>
+		  <option value="wav_same_key/014_Brink.wav">014_Brink</option>
+		  <option value="wav_same_key/017_Hall.wav">017_Hall</option>
+		  <option value="wav_same_key/018_Mathieson.wav">018_Mathieson</option>
+		  <option value="wav_same_key/019_Findlater.wav">019_Findlater</option>
+		  <option value="wav_same_key/023_Johnson.wav">023_Johnson</option>
+		  <option value="wav_same_key/024_MacGregor.wav">024_MacGregor</option>
+		  <option value="wav_same_key/025_Martin.wav">025_Martin</option>
+		  <option value="wav_same_key/029_McAllan.wav">029_McAllan</option>
+		  <option value="wav_same_key/030_Gillespie.wav">030_Gillespie</option>
+		  <option value="wav_same_key/031_Spence.wav">031_Spence</option>
+		  <option value="wav_same_key/032_Johnstone.wav">032_Johnstone</option>
+		  <option value="wav_same_key/033_Forrest.wav">033_Forrest</option>
+		  <option value="wav_same_key/034_Davidson.wav">034_Davidson</option>
+		  <option value="wav_same_key/035_Cruickshank.wav">035_Cruickshank</option>
+		  <option value="wav_same_key/036_Calder.wav">036_Calder</option>
+		  <option value="wav_same_key/037_Bruce-Thomson.wav">037_Bruce-Thomson</option>
+		  <option value="wav_same_key/038_Walker.wav">038_Walker</option>
+		  <option value="wav_same_key/039_Watt.wav">039_Watt</option>
+		  <option value="wav_same_key/040_Walker.wav">040_Walker</option>
+		  <option value="wav_same_key/041_Gordon.wav">041_Gordon</option>
+		  <option value="wav_same_key/042_Lyall.wav">042_Lyall</option>
+		  <option value="wav_same_key/043_Rettie.wav">043_Rettie</option>
+		  <option value="wav_same_key/044_Petrie.wav">044_Petrie</option>
+		  <option value="wav_same_key/045_Mowat.wav">045_Mowat</option>
+		  <option value="wav_same_key/054_Kennedy.wav">054_Kennedy</option>
+		  <option value="wav_same_key/056_MacBeath.wav">056_MacBeath</option>
+		  <option value="wav_same_key/057_Moran.wav">057_Moran</option>
+		  <option value="wav_same_key/058_Campbell.wav">058_Campbell</option>  
+		  <option value="wav_same_key/059_Clapp.wav">059_Clapp</option>	 
+		  <option value="wav_same_key/060_Wallin.wav">060_Wallin</option>
+		  <option value="wav_same_key/061_Kemp.wav">061_Kemp</option>    	       
+	    </select></td>
+	    <td></td></tr>
+    	<th><b>Hear original audio sources:</b></th>
+	    <tr><td><select id="audio">
+		  <option value="none" disabled selected>------</option>
+		  <option value="audio/002_Duncan.mp3">002_Duncan</option>
+		  <option value="audio/005_Strachan.mp3">005_Strachan</option>
+		  <option value="audio/010_Easton.mp3">010_Easton</option>
+		  <option value="audio/014_Brink.mp3">014_Brink</option>
+		  <option value="audio/018_Mathieson.mp4">018_Mathieson</option>
+		  <option value="audio/019_Findlater.mp4">019_Findlater</option>
+		  <option value="audio/054_Kennedy.mp3">054_Kennedy</option>
+		  <option value="audio/056_MacBeath.mp3">056_MacBeath</option>
+		  <option value="audio/057_Moran.mp3">057_Moran</option>
+		  <option value="audio/060_Wallin.m4a">060_Wallin</option>
+	    </select></td></tr>
+	</table>
+    <b>Click to toggle highlighting of individual variants on chart.</b>
+    <div id = 'buttons'></div>
+</body>
+
+<script type='text/javascript' src='src/script.js'></script>
+<script>chartPitches("number");</script>
+<script>
+$("#all").on('change', function() {
+  var v = $(this).val();
+  if (v !== "none") {
+    window.open(v);
+    $(this).val("none");
+  }
+});
+</script>
+<script>
+$("#audio").on('change', function() {
+  var v = $(this).val();
+  if (v !== "none") {
+    window.open(v);
+    $(this).val("none");
+  }
+});
+</script>
+
+
+<!-- Mirrored from www.carolineglazer.com/peggy/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Mar 2017 17:58:27 GMT -->
+</html>
