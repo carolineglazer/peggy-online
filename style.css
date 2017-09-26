@@ -109,8 +109,6 @@ h2 {
 }
 
 #contact {
-	margin-bottom: 1em;
+	margin-bottom: 0em;
 	position: absolute;
-	top: 30em;
-	left: 6.6em;
 }
