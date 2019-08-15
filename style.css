@@ -103,7 +103,7 @@ h2 {
 	position: absolute;
 	width: 600px;
 	height: 3em;
-	border: 1px dashed black;
+	border: 0;
 	top: 33em;
 	left: 6.6em;
 }
