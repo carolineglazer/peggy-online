@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	color: black;
 	font-size: 16px;
-	font-family: 'Garamond', 'Times', serif;
+	font-family: 'Lato', 'Times', serif;
 	font-style: italic;
 	line-height: 1.5em;
 	text-align: center;
@@ -10,7 +10,7 @@ body {
 
 h1 {
 	font-size: 3em;
-	font-family: 'Oswald', 'Garamond', 'Times', serif;
+	font-family: 'Lato', 'Times', serif;
 	font-style: normal;
 	font-weight: normal;
 	margin: 0 auto 0.35em;
@@ -19,7 +19,7 @@ h1 {
 
 h2 {
 	font-size: 1.9em;
-	font-family: 'Oswald', 'Garamond', 'Times', serif;
+	font-family: 'Lato', 'Times', serif;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 1em;
@@ -74,7 +74,6 @@ h2 {
 	}
 
 	#nav a:hover .button {
-		/*background: url(finger-l.png) left no-repeat;*/
 		background-color: black;
 		color: white;
 	}
