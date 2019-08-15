@@ -2,7 +2,8 @@ body {
 	margin: 0;
 	color: black;
 	font-size: 16px;
-	font-family: 'Lato', 'Times', serif;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	font-style: italic;
 	line-height: 1.5em;
 	text-align: center;
@@ -10,16 +11,16 @@ body {
 
 h1 {
 	font-size: 3em;
-	font-family: 'Lato', 'Times', serif;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	margin: 0 auto 0.35em;
+	margin: 0 auto 0.15em;
 	line-height: 1em;
 }
 
 h2 {
 	font-size: 1.9em;
-	font-family: 'Lato', 'Times', serif;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 1em;
@@ -88,7 +89,7 @@ h2 {
 		position: absolute;
 		width: 100px
 		vertical-align: middle;
-		top: 33em;
+		top: 38em;
 		left: 6.6em;
 	}
 
@@ -96,16 +97,6 @@ h2 {
 		outline-style: none;
 		outline-width: 0;
 	}
-
-#box {
-	margin-bottom: 1em;
-	position: absolute;
-	width: 600px;
-	height: 3em;
-	border: 0;
-	top: 33em;
-	left: 6.6em;
-}
 
 #contact {
 	margin-bottom: 0em;
